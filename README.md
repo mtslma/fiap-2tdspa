@@ -5,7 +5,7 @@ Repositório dedicado aos conteúdos do 2° ano do curso de Análise e Desenvolv
 
 ## 📒 Conteúdos
 
- - [Mastering Relational and Non-Relational Database](https://github.com/mtslma/fiap-2tdspa/tree/main/relation-non-relational-database)
+ - [Mastering Relational and Non-Relational Database](https://github.com/mtslma/fiap-2tdspa/tree/main/relational-non-relational-database)
 
 
  
