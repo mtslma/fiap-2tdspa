@@ -3,9 +3,10 @@
 
 Repositório dedicado aos conteúdos do 2° ano do curso de Análise e Desenvolvimento de Sistemas na FIAP
 
-## 📒 Conteúdos
+## 📒 Matérias
 
  - [Mastering Relational and Non-Relational Database](https://github.com/mtslma/fiap-2tdspa/tree/main/relational-non-relational-database)
+ - [Disruptives-architectures](https://github.com/mtslma/fiap-2tdspa/tree/main/disruptives-architectures)
 
 
  
