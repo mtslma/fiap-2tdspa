@@ -1,0 +1,7 @@
+Resolver erro do 'npx expo start'
+
+https://stackoverflow.com/questions/70020046/quasar-error-cannot-find-module-ajv-dist-compile-codegen
+
+Alterar a forma que o menu de desenvolvedor é aberto para não ter que chachoalhar o celular
+
+https://stackoverflow.com/questions/49515325/open-dev-menu-or-reload-app-without-shaking
