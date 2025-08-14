@@ -1,47 +1,95 @@
 package br.com.fiap.aula_01.controller;
 
-import br.com.fiap.aula_01.record.Projeto;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import br.com.fiap.aula_01.dto.ProjetoDTO;
+import br.com.fiap.aula_01.service.ProjetoService;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
 import java.util.Map;
 
 @RestController
 @RequestMapping("/projetos")
 public class ProjetoController {
 
-    // Usansdo o map
-    private Map<Integer, Projeto> map = new HashMap<>();
+    // Injetando o service no controller por meio de construtor
+    private final ProjetoService projetoService;
 
-
-    // Construindo uma lista básica para armazenar projetos em memória
-    // List<ProjetoRecord> lista = new ArrayList<>();
-
-    // http://localhost:8000/api/projetos
-    @GetMapping
-    public Map<Integer, Projeto> listar(){
-
-        map.put(1, new Projeto(1, "PROJETO 1", "Mateus"));
-        map.put(2, new Projeto(2, "PROJETO 2", "Miguel"));
-        map.put(3, new Projeto(3, "PROJETO 3", "Lucas"));
-        map.put(4, new Projeto(4, "PROJETO 4", "Laura"));
-        map.put(5, new Projeto(5, "PROJETO 5", "Ana"));
-        map.put(6, new Projeto(6, "PROJETO 6", "Pedro"));
-        map.put(7, new Projeto(7, "PROJETO 7", "Juliana"));
-        map.put(8, new Projeto(8, "PROJETO 8", "Rafael"));
-        map.put(9, new Projeto(9, "PROJETO 9", "Camila"));
-        map.put(10, new Projeto(10, "PROJETO 10", "Bruno"));
-
-
-        return map;
+    public ProjetoController(ProjetoService projetoService) {
+        this.projetoService = projetoService;
     }
 
-    // Método para buscar por chave
-    // @GetMapping
-    // public Projeto buscarPorId(Integer chave){
-    //    return map.get(chave);
-    // }
+
+
+    // POST - Criando um novo projeto
+    // http://localhost:8000/api/projetos
+    @PostMapping
+    public ResponseEntity<?> criar(@RequestBody ProjetoDTO projetoDTO){
+
+        // Verificando se o projeto já existe
+        if (projetoService.findById(projetoDTO.getId()) != null){
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        };
+
+        // Chamando o projeto
+        projetoService.criar(projetoDTO);
+        return new ResponseEntity<>(projetoDTO, HttpStatus.CREATED);
+    }
+
+
+
+    // GET - Listando todos os projetos
+    // http://localhost:8000/api/projetos
+    @GetMapping
+    public Map<Integer, ProjetoDTO> listar(){
+        return projetoService.listar();
+    }
+
+
+
+    // GET - Buscando um projeto por ID
+    // http://localhost:8000/api/projetos/1
+    @GetMapping("/{id}")
+    public ResponseEntity<?> buscar(@PathVariable Integer id){
+
+        ProjetoDTO projeto = projetoService.findById(id);
+
+        if (projeto != null){
+            return new ResponseEntity<>(projeto, HttpStatus.OK);
+        }
+
+        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+    }
+
+
+
+    // PUT - Atualizando um projeto
+    // http://localhost:8000/api/projetos/1
+    @PutMapping("/{id}")
+    public ResponseEntity<?> alterar(@PathVariable Integer id, @RequestBody ProjetoDTO projetoDTO){
+
+        // Verificando se o projeto já existe
+        if (projetoService.findById(projetoDTO.getId()) != null){
+            projetoService.alterar(projetoDTO);
+            return new ResponseEntity<>(projetoDTO, HttpStatus.OK);
+        };
+
+        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+    }
+
+
+
+    // DELETE - Deletando um projeto
+    // http://localhost:8000/api/projetos/1
+    @DeleteMapping("/{id}")
+    public ResponseEntity<?> apagar(@PathVariable Integer id){
+        // Verificando se o projeto já existe
+        if (projetoService.findById(id) != null){
+            projetoService.apagar(id);
+            return new ResponseEntity<>(HttpStatus.OK);
+        };
+
+        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+    }
 }
 
