@@ -1,9 +1,11 @@
 package br.com.fiap.aula_01.dto;
 
+import lombok.Builder;
 import lombok.Data;
 
 import java.time.Instant;
 
+@Builder
 @Data
 public class ProjetoDTO {
     private Integer id;

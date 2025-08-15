@@ -30,7 +30,15 @@ public class ProjetoService {
 
         projetoDTO.setDataCriacao(tempoService.agora());
 
-        projetos.put(projetoDTO.getId(), projetoDTO);
+        // Utilizando o padrão builder
+        ProjetoDTO projeto = ProjetoDTO.builder()
+                .id(projetoDTO.getId())
+                .nome(projetoDTO.getNome())
+                .responsavel(projetoDTO.getResponsavel())
+                .dataCriacao(projetoDTO.getDataCriacao())
+                .build();
+
+        projetos.put(projetoDTO.getId(), projeto);
     }
 
     public void alterar(ProjetoDTO projetoDTO){
