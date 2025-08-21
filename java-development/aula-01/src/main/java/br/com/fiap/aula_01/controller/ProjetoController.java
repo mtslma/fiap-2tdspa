@@ -1,12 +1,13 @@
 package br.com.fiap.aula_01.controller;
 
 import br.com.fiap.aula_01.dto.ProjetoDTO;
+import br.com.fiap.aula_01.entity.Projeto;
 import br.com.fiap.aula_01.service.ProjetoService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Map;
+import java.util.List;
 
 @RestController
 @RequestMapping("/projetos")
@@ -41,7 +42,7 @@ public class ProjetoController {
     // GET - Listando todos os projetos
     // http://localhost:8000/api/projetos
     @GetMapping
-    public Map<Integer, ProjetoDTO> listar(){
+    public List<Projeto> listar(){
         return projetoService.listar();
     }
 
@@ -50,7 +51,7 @@ public class ProjetoController {
     // GET - Buscando um projeto por ID
     // http://localhost:8000/api/projetos/1
     @GetMapping("/{id}")
-    public ResponseEntity<?> buscar(@PathVariable Integer id){
+    public ResponseEntity<?> buscar(@PathVariable Long id){
 
         ProjetoDTO projeto = projetoService.findById(id);
 
@@ -66,7 +67,7 @@ public class ProjetoController {
     // PUT - Atualizando um projeto
     // http://localhost:8000/api/projetos/1
     @PutMapping("/{id}")
-    public ResponseEntity<?> alterar(@PathVariable Integer id, @RequestBody ProjetoDTO projetoDTO){
+    public ResponseEntity<?> alterar(@PathVariable Long id, @RequestBody ProjetoDTO projetoDTO){
 
         // Verificando se o projeto já existe
         if (projetoService.findById(projetoDTO.getId()) != null){
@@ -82,7 +83,7 @@ public class ProjetoController {
     // DELETE - Deletando um projeto
     // http://localhost:8000/api/projetos/1
     @DeleteMapping("/{id}")
-    public ResponseEntity<?> apagar(@PathVariable Integer id){
+    public ResponseEntity<?> apagar(@PathVariable Long id){
         // Verificando se o projeto já existe
         if (projetoService.findById(id) != null){
             projetoService.apagar(id);

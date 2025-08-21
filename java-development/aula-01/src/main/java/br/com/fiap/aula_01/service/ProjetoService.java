@@ -1,28 +1,40 @@
 package br.com.fiap.aula_01.service;
 
 import br.com.fiap.aula_01.dto.ProjetoDTO;
+import br.com.fiap.aula_01.entity.Projeto;
+import br.com.fiap.aula_01.repository.ProjetoRepository;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.time.Instant;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.List;
+import java.util.Optional;
 
 @Service
+@AllArgsConstructor
 public class ProjetoService {
+
+    private final ProjetoRepository projetoRepository;
 
     // Injetando o serviço de tempo no service por meio de construtor
     public final TempoService tempoService;
-    public ProjetoService(TempoService tempoService) {
-        this.tempoService = tempoService;
+
+
+    private ProjetoDTO toEntity(Projeto entity){
+        ProjetoDTO projetoDTO = ProjetoDTO.builder()
+                .id(entity.getId())
+                .nome(entity.getNome())
+                .responsavel(entity.getResponsavel())
+                .dataCriacao(entity.getDataCriacao())
+                .build();
     }
 
-    // Usando o map para armazenar os projetos
-    private Map<Integer, ProjetoDTO> projetos = new HashMap<>();
-    
-    public ProjetoDTO findById(Integer id){
-        if (projetos.containsKey(id)) {
-            return projetos.get(id);
+    public ProjetoDTO findById(Long id){
+        Optional<Projeto> projetoOptional = projetoRepository.findById(id);
+
+        if (projetoOptional.isPresent()){
+            return toEntity(projetoOptional.get());
         }
+
         return null;
     }
 
@@ -45,11 +57,11 @@ public class ProjetoService {
         projetos.put(projetoDTO.getId(), projetoDTO);
     }
 
-    public Map<Integer, ProjetoDTO> listar() {
-        return projetos;
+    public List<Projeto> listar() {
+        return projetoRepository.findAll();
     }
 
-    public void apagar(Integer id) {
+    public void apagar(Long id) {
         projetos.remove(id);
     }
 }

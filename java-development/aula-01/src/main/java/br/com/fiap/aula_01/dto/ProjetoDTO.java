@@ -8,7 +8,7 @@ import java.time.Instant;
 @Builder
 @Data
 public class ProjetoDTO {
-    private Integer id;
+    private Long id;
     private String nome;
     private String responsavel;
     private Instant dataCriacao;

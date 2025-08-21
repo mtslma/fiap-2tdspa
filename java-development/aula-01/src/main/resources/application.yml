@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: AULA-01
+
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+    platform: h2
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+server:
+  port: 8000
+  servlet:
+    context-path: /api
+
+# JPA (opcional, mas útil para persistência automática)
+spring.jpa:
+  database-platform: org.hibernate.dialect.H2Dialect
+  hibernate:
+    ddl-auto: update
+  show-sql: true
