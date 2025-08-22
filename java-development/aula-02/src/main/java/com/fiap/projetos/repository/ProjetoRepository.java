@@ -1,6 +1,6 @@
-package br.com.fiap.aula_01.repository;
+package com.fiap.projetos.repository;
 
-import br.com.fiap.aula_01.entity.Projeto;
+import com.fiap.projetos.entity.Projeto;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
