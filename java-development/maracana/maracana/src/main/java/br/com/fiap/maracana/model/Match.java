@@ -19,8 +19,12 @@ public class Match {
     @Column(nullable = false, length = 50)
     private String adversary;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 50)
     private String stadium;
+
+    // Por enquanto vou deixar o match como true só para não quebrar o fluxo que eu já tenho
+    @Column(nullable = true)
+    private Integer maxCapacity;
 
     private LocalDateTime date;
 
