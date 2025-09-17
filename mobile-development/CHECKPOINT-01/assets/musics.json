@@ -1,0 +1,200 @@
+[
+  {
+    "id": 1,
+    "title": "Jeito Bandido",
+    "artist": "Veigh",
+    "album": "Dos Prédios",
+    "duration": "2:26",
+    "cover": "https://raw.githubusercontent.com/felipecvo-fiap-mad/public-resources/main/2025/2tdspw/album-covers/images/ab67616d0000b2736ac996c7c01c601a8edc08c7.jpg",
+    "listened": 36416601
+  },
+  {
+    "id": 2,
+    "title": "Dona do Meu Pensamento",
+    "artist": "Charlie Brown Jr.",
+    "album": "Camisa 10 Joga Bola Até na Chuva",
+    "duration": "3:59",
+    "cover": "https://raw.githubusercontent.com/felipecvo-fiap-mad/public-resources/main/2025/2tdspw/album-covers/images/ab67616d0000b273f066003f5c78d52a42bb25b1.jpg",
+    "listened": 30804965
+  },
+  {
+    "id": 3,
+    "title": "Aquelas Coisas",
+    "artist": "pumapjl",
+    "album": "Naturalidade",
+    "duration": "2:1",
+    "cover": "https://raw.githubusercontent.com/felipecvo-fiap-mad/public-resources/main/2025/2tdspw/album-covers/images/73a5e79f0bf60b29e571295cd7.jpg",
+    "listened": 40625929
+  },
+  {
+    "id": 4,
+    "title": "Chop Suey!",
+    "artist": "System Of A Down",
+    "album": "Toxicity",
+    "duration": "3:30",
+    "cover": "https://raw.githubusercontent.com/felipecvo-fiap-mad/public-resources/main/2025/2tdspw/album-covers/images/30d45198d0c9e8841f9a9578.jpg",
+    "listened": 1605657830
+  },
+  {
+    "id": 5,
+    "title": "Saint Pablo",
+    "artist": "Kanye West",
+    "album": "The Life Of Pablo",
+    "duration": "6:12",
+    "cover": "https://raw.githubusercontent.com/felipecvo-fiap-mad/public-resources/main/2025/2tdspw/album-covers/images/2a7db835b912dc5014bd37f4.jpg",
+    "listened": 215024052
+  },
+  {
+    "id": 6,
+    "title": "Seven (feat. Latto)",
+    "artist": "Jung Kook",
+    "album": "Seven (feat. Latto) (Alesso Remix)",
+    "duration": "3:04",
+    "cover": "https://raw.githubusercontent.com/felipecvo-fiap-mad/public-resources/main/2025/2tdspw/album-covers/images/1f9db1e2f1d8705812883368.jpg",
+    "listened": 2255045182
+  },
+  {
+    "id": 7,
+    "title": "Lucid Dreams",
+    "artist": "Juice WRLD",
+    "album": "Goodbye & Good Riddance",
+    "duration": "3:59",
+    "cover": "https://raw.githubusercontent.com/felipecvo-fiap-mad/public-resources/main/2025/2tdspw/album-covers/images/ab67616d0000b273f7db43292a6a99b21b51d5b4.jpg",
+    "listened": 2827605558
+  },
+  {
+    "id": 8,
+    "title": "Evening",
+    "artist": "Tin Pan",
+    "album": "The Home Bartender's Songbook",
+    "duration": "6:10",
+    "cover": "https://raw.githubusercontent.com/felipecvo-fiap-mad/public-resources/main/2025/2tdspw/album-covers/images/ab67616d0000b27312e811ec849cb1a02abeea30.jpg",
+    "listened": 1080393
+  },
+  {
+    "id": 9,
+    "title": "Heaven and Hell",
+    "artist": "Black Sabbath",
+    "album": "Heaven & Hell",
+    "duration": "6:57",
+    "cover": "https://raw.githubusercontent.com/felipecvo-fiap-mad/public-resources/main/2025/2tdspw/album-covers/images/ab67616d0000b273a48447e72e8c507054c2ec2e.jpg",
+    "listened": 148710044
+  },
+  {
+    "id": 10,
+    "title": "Estações - Ao Vivo",
+    "artist": "Dunamis Music",
+    "album": "Essência Vol. 1 (Ao Vivo)",
+    "duration": "7:41",
+    "cover": "https://raw.githubusercontent.com/felipecvo-fiap-mad/public-resources/main/2025/2tdspw/album-covers/images/ab67616d0000b273ebcc4c45695e7f79cf2b0a72.jpg",
+    "listened": 2451513
+  },
+  {
+    "id": 11,
+    "title": "Malvadinho",
+    "artist": "MC LUUKY",
+    "album": "Malvadinho",
+    "duration": "2:00",
+    "cover": "https://raw.githubusercontent.com/felipecvo-fiap-mad/public-resources/main/2025/2tdspw/album-covers/images/ab67616d0000b273a36f7f7c86677d4ec13b6683.jpg",
+    "listened": 116720673
+  },
+  {
+    "id": 12,
+    "title": "Man in the Mirror - 2003 Edit",
+    "artist": "Michael Jackson",
+    "album": "Number Ones",
+    "duration": "5:03",
+    "cover": "https://raw.githubusercontent.com/felipecvo-fiap-mad/public-resources/main/2025/2tdspw/album-covers/images/ab67616d0000b27386a14b2986ff774e8e6e3341.jpg",
+    "listened": 4388456
+  },
+  {
+    "id": 13,
+    "title": "Sorry Not Sorry",
+    "artist": "Demi Lovato",
+    "album": "Tell Me You Love Me",
+    "duration": "3:23",
+    "cover": "https://raw.githubusercontent.com/felipecvo-fiap-mad/public-resources/main/2025/2tdspw/album-covers/images/ab67616d0000b273f70868aec6eebfea4cd16c70.jpg",
+    "listened": 1202351948
+  },
+  {
+    "id": 14,
+    "title": "Boate Azul (Ao Vivo)",
+    "artist": "Bruno & Marrone",
+    "album": "Acústico - Ao Vivo",
+    "duration": "5:46",
+    "cover": "https://raw.githubusercontent.com/felipecvo-fiap-mad/public-resources/main/2025/2tdspw/album-covers/images/ab67616d0000b2739ce10bf887848831c83ec215.jpg",
+    "listened": 124283753
+  },
+  {
+    "id": 15,
+    "title": "All Mine",
+    "artist": "PLAZA",
+    "album": "All Mine",
+    "duration": "3:54",
+    "cover": "https://raw.githubusercontent.com/felipecvo-fiap-mad/public-resources/main/2025/2tdspw/album-covers/images/ab67616d0000b2739508c0f8fe9667910168362a.jpg",
+    "listened": 101548593
+  },
+  {
+    "id": 16,
+    "title": "Take What You Want (feat. Ozzy Osbourne & Travis Scott)",
+    "artist": "Post Malone",
+    "album": "Hollywood's Bleeding",
+    "duration": "3:49",
+    "cover": "https://raw.githubusercontent.com/felipecvo-fiap-mad/public-resources/main/2025/2tdspw/album-covers/images/ab67616d0000b2739478c87599550dd73bfa7e02.jpg",
+    "listened": 684102220
+  },
+  {
+    "id": 17,
+    "title": "Orphans",
+    "artist": "Coldplay",
+    "album": "Everyday Life",
+    "duration": "3:17",
+    "cover": "https://raw.githubusercontent.com/felipecvo-fiap-mad/public-resources/main/2025/2tdspw/album-covers/images/ab67616d0000b273733913465adb99353020b805.jpg",
+    "listened": 253407778
+  },
+  {
+    "id": 18,
+    "title": "Loading",
+    "artist": "Central Cee",
+    "album": "Wild West",
+    "duration": "2:53",
+    "cover": "https://raw.githubusercontent.com/felipecvo-fiap-mad/public-resources/main/2025/2tdspw/album-covers/images/ab67616d0000b2731675d50a0ba7919b5e5797fe.jpg",
+    "listened": 405599156
+  },
+  {
+    "id": 19,
+    "title": "HOTEL LOBBY (Unc & Phew) - A COLORS SHOW",
+    "artist": "Quavo",
+    "album": "HOTEL LOBBY (Unc & Phew) - A COLORS SHOW",
+    "duration": "2:45",
+    "cover": "https://raw.githubusercontent.com/felipecvo-fiap-mad/public-resources/main/2025/2tdspw/album-covers/images/ab67616d0000b27319e2462d9211bade93d05419.jpg",
+    "listened": 55784130
+  },
+  {
+    "id": 20,
+    "title": "Dani California",
+    "artist": "Red Hot Chili Peppers",
+    "album": "Stadium Arcadium",
+    "duration": "4:42",
+    "cover": "https://raw.githubusercontent.com/felipecvo-fiap-mad/public-resources/main/2025/2tdspw/album-covers/images/ab67616d0000b27309fd83d32aee93dceba78517.jpg",
+    "listened": 832544058
+  },
+  {
+    "id": 21,
+    "title": "Sunflower - Spider-Man: Into the Spider-Verse",
+    "artist": "Post Malone",
+    "album": "Spider-Man: Into the Spider-Verse (Soundtrack From & Inspired by the Motion Picture)",
+    "duration": "2:38",
+    "cover": "https://raw.githubusercontent.com/felipecvo-fiap-mad/public-resources/main/2025/2tdspw/album-covers/images/ab67616d0000b273e2e352d89826aef6dbd5ff8f.jpg",
+    "listened": 3739993591
+  },
+  {
+    "id": 22,
+    "title": "Doomed",
+    "artist": "Bring Me The Horizon",
+    "album": "That's The Spirit",
+    "duration": "4:34",
+    "cover": "https://raw.githubusercontent.com/felipecvo-fiap-mad/public-resources/main/2025/2tdspw/album-covers/images/ab67616d0000b273413697269620e16f4466f543.jpg",
+    "listened": 140863476
+  }
+]
