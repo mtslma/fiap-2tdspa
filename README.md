@@ -1,7 +1,7 @@
 
 # FIAP 2TDSPA
 
-Repositório dedicado aos conteúdos do 2° ano do curso de Análise e Desenvolvimento de Sistemas na FIAP
+Repositório dedicado aos conteúdos do 2° ano do curso de Análise e Desenvolvimento de Sistemas na FIAP.
 
 ## 📒 Matérias
 
